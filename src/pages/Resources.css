@@ -1,0 +1,236 @@
+.resources-page {
+  min-height: 100vh;
+  background: #f8faff;
+}
+
+.resources-content {
+  padding: 50px 60px;
+  text-align: center;
+}
+
+.resources-content h1 {
+  color: #0f172a;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.resources-intro {
+  color: #64748b;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 45px;
+  line-height: 1.6;
+}
+
+/* Resource Cards */
+
+.resources-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resource-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e0e7ff;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.12);
+}
+
+.resource-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.resource-card h2 {
+  color: #4f46e5;
+  margin-bottom: 12px;
+}
+
+.resource-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.resource-card button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resource-card button:hover {
+  background: #4f46e5;
+}
+
+/* Selected Resource */
+
+.selected-resource {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 30px;
+  background: #eef2ff;
+  border: 1px solid #e0e7ff;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.selected-resource h2 {
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.selected-resource > p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Subjects */
+
+.subject-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.subject-button {
+  padding: 12px 22px;
+  border: 1px solid #c7d2fe;
+  border-radius: 10px;
+  background: white;
+  color: #4f46e5;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subject-button:hover {
+  background: #6366f1;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Subject Content */
+
+.subject-content {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.subject-content h3 {
+  color: #4f46e5;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.subject-content p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.content-button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content-button:hover {
+  background: #4f46e5;
+}
+
+/* Learning Material */
+
+.learning-material {
+  margin-top: 30px;
+  padding: 30px;
+  background: #f8faff;
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.learning-material > h3 {
+  color: #4f46e5;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.learning-material > p {
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.material-box {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid #e0e7ff;
+}
+
+.material-box h4 {
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.material-box p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .resources-content {
+    padding: 40px 20px;
+  }
+
+  .resources-content h1 {
+    font-size: 32px;
+  }
+
+  .resources-intro {
+    font-size: 16px;
+  }
+
+  .resources-container {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-resource {
+    padding: 25px 20px;
+  }
+
+}

@@ -1,0 +1,610 @@
+.low-data-page {
+  min-height: 100vh;
+  background: #fff9f7;
+}
+
+.low-data-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 55px 60px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.low-data-header {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.low-data-label {
+  display: inline-block;
+
+  padding: 9px 18px;
+  margin-bottom: 18px;
+
+  border-radius: 30px;
+
+  background: #fff0ec;
+  color: #b85f52;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.low-data-header h1 {
+  color: #30243a;
+
+  font-size: 52px;
+  font-weight: 800;
+
+  margin-bottom: 15px;
+}
+
+.low-data-header h1 span {
+  color: #ff7d70;
+}
+
+.low-data-header p {
+  color: #776878;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* =========================
+   MAIN DATA MODE CARD
+========================= */
+
+.data-mode-card {
+  max-width: 950px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #fff0ec,
+    #f3edff
+  );
+
+  border: 1px solid #eadce4;
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 25px rgba(48, 36, 58, 0.06);
+}
+
+.data-mode-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: white;
+
+  border-radius: 19px;
+
+  font-size: 30px;
+
+  box-shadow:
+    0 6px 15px rgba(48, 36, 58, 0.07);
+}
+
+.data-mode-info {
+  flex: 1;
+}
+
+.data-mode-info > span {
+  color: #9b7a87;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.data-mode-info h2 {
+  color: #30243a;
+
+  font-size: 23px;
+
+  margin: 5px 0 7px;
+}
+
+.data-mode-info p {
+  color: #776878;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   TOGGLE
+========================= */
+
+.toggle-button {
+  width: 64px;
+  height: 34px;
+
+  position: relative;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #d9d0d5;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.toggle-button.enabled {
+  background: #ff8a7a;
+}
+
+.toggle-circle {
+  position: absolute;
+
+  width: 26px;
+  height: 26px;
+
+  top: 4px;
+  left: 4px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  box-shadow:
+    0 3px 8px rgba(48, 36, 58, 0.18);
+
+  transition: 0.3s ease;
+}
+
+.toggle-button.enabled .toggle-circle {
+  transform: translateX(30px);
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.mode-status {
+  max-width: 950px;
+
+  margin: 0 auto 65px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  background: white;
+
+  border: 1px solid #eadfe3;
+  border-radius: 16px;
+}
+
+.status-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #fff0ec;
+  color: #ff7164;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.mode-status strong {
+  display: block;
+
+  color: #49394f;
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+}
+
+.mode-status p {
+  color: #806d7d;
+
+  font-size: 12px;
+}
+
+/* =========================
+   SAVING FEATURES
+========================= */
+
+.saving-section {
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading > div > span,
+.usage-header > div > span {
+  color: #9b7a87;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.section-heading h2,
+.usage-header h2 {
+  color: #30243a;
+
+  font-size: 28px;
+
+  margin-top: 6px;
+}
+
+.saving-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+.saving-card {
+  padding: 27px 23px;
+
+  border-radius: 22px;
+
+  transition: 0.3s ease;
+}
+
+.saving-card:nth-child(1) {
+  background: #fff0ec;
+  border: 1px solid #ffd5cc;
+}
+
+.saving-card:nth-child(2) {
+  background: #f3edff;
+  border: 1px solid #dfd1f5;
+}
+
+.saving-card:nth-child(3) {
+  background: #fff0f3;
+  border: 1px solid #f4d0d8;
+}
+
+.saving-card:nth-child(4) {
+  background: #fff3ed;
+  border: 1px solid #f5d7c9;
+}
+
+.saving-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 30px rgba(48, 36, 58, 0.09);
+}
+
+.saving-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  background: white;
+
+  border-radius: 17px;
+
+  font-size: 26px;
+
+  box-shadow:
+    0 6px 15px rgba(48, 36, 58, 0.07);
+}
+
+.saving-card h3 {
+  color: #30243a;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+}
+
+.saving-card p {
+  color: #776878;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* =========================
+   DATA USAGE
+========================= */
+
+.usage-section {
+  max-width: 950px;
+
+  margin: 0 auto 50px;
+
+  padding: 28px 30px;
+
+  background: white;
+
+  border: 1px solid #eadfe3;
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 25px rgba(48, 36, 58, 0.05);
+}
+
+.usage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.usage-header strong {
+  color: #ff7d70;
+
+  font-size: 25px;
+}
+
+.usage-bar {
+  width: 100%;
+  height: 12px;
+
+  background: #f1e8eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 12px;
+}
+
+.usage-fill {
+  width: 38%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #ff8a7a,
+    #c8b6e8
+  );
+
+  border-radius: 20px;
+}
+
+.usage-details {
+  display: flex;
+  justify-content: space-between;
+
+  color: #806d7d;
+
+  font-size: 13px;
+}
+
+.usage-details strong {
+  color: #5c4b65;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-card {
+  max-width: 950px;
+
+  margin: 0 auto 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 28px 30px;
+
+  background: linear-gradient(
+    135deg,
+    #f3edff,
+    #fff0f3
+  );
+
+  border: 1px solid #e1d4e8;
+  border-radius: 22px;
+}
+
+.benefits-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: white;
+
+  border-radius: 18px;
+
+  font-size: 28px;
+}
+
+.benefits-card h2 {
+  color: #30243a;
+
+  font-size: 21px;
+
+  margin-bottom: 8px;
+}
+
+.benefits-card p {
+  color: #776878;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  margin-bottom: 12px;
+}
+
+.benefit-points {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  color: #765e83;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.low-data-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.low-data-actions a {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  background: #fff0ec;
+  color: #9b5147;
+
+  border: 1px solid #ffd5cc;
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.low-data-actions a:hover {
+  background: #ffc6b8;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+  .saving-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .low-data-content {
+    padding: 45px 25px;
+  }
+
+  .data-mode-card {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .low-data-header h1 {
+    font-size: 40px;
+  }
+
+  .data-mode-card {
+    flex-wrap: wrap;
+  }
+
+  .toggle-button {
+    margin-left: 80px;
+  }
+
+  .saving-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usage-details {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .benefits-card {
+    align-items: flex-start;
+  }
+
+  .benefit-points {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .low-data-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .low-data-actions a {
+    width: 220px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .low-data-content {
+    padding: 35px 18px;
+  }
+
+  .low-data-header h1 {
+    font-size: 34px;
+  }
+
+  .low-data-header p {
+    font-size: 15px;
+  }
+
+  .data-mode-card {
+    padding: 22px;
+  }
+
+  .usage-section {
+    padding: 23px 20px;
+  }
+
+  .benefits-card {
+    padding: 23px 20px;
+  }
+}

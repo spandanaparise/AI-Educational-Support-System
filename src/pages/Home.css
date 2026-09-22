@@ -1,0 +1,361 @@
+.home {
+  min-height: 100vh;
+  background: #fff9f7;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background:
+    radial-gradient(circle at 15% 20%, #ffc6b8 0%, transparent 28%),
+    radial-gradient(circle at 85% 25%, #c8b6e8 0%, transparent 30%),
+    radial-gradient(circle at 50% 100%, #f4b6c2 0%, transparent 25%),
+    #fff9f7;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative circles */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background: #ff8a7a;
+
+  opacity: 0.12;
+
+  top: 80px;
+  left: 7%;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+
+  background: #c8b6e8;
+
+  opacity: 0.18;
+
+  bottom: 80px;
+  right: 8%;
+}
+
+.hero-content {
+  max-width: 850px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+/* Small Label */
+
+.hero-content::before {
+  content: "✨ SMART LEARNING • ANYWHERE";
+
+  display: inline-block;
+
+  padding: 9px 18px;
+
+  margin-bottom: 25px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 198, 184, 0.45);
+
+  color: #9b5147;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* Main Heading */
+
+.hero h1 {
+  font-size: 58px;
+
+  line-height: 1.12;
+
+  margin-bottom: 22px;
+
+  color: #30243a;
+
+  font-weight: 800;
+}
+
+.hero h1 span {
+  display: block;
+
+  color: #ff6f61;
+}
+
+/* Subtitle */
+
+.hero-subtitle {
+  font-size: 24px;
+
+  font-weight: 600;
+
+  color: #5c4b65;
+
+  margin-bottom: 18px;
+}
+
+/* Description */
+
+.hero-description {
+  max-width: 680px;
+
+  margin: 0 auto 35px;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: #776878;
+}
+
+/* Start Button */
+
+.start-button {
+  display: inline-block;
+
+  padding: 15px 32px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #ff8a7a,
+    #f4a6a0
+  );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 25px rgba(255, 138, 122, 0.28);
+
+  transition: 0.25s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 30px rgba(255, 138, 122, 0.35);
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+  padding: 80px 60px;
+
+  text-align: center;
+
+  background: #fff9f7;
+}
+
+.features h2 {
+  font-size: 36px;
+
+  color: #30243a;
+
+  margin-bottom: 12px;
+}
+
+.features-intro {
+  color: #776878;
+
+  font-size: 17px;
+
+  margin-bottom: 45px;
+}
+
+/* Feature Cards */
+
+.feature-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+.feature-card {
+  position: relative;
+
+  padding: 35px 28px;
+
+  border-radius: 22px;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  transition: 0.3s ease;
+
+  overflow: hidden;
+}
+
+/* First Card - Peach */
+
+.feature-card:nth-child(1) {
+  background: #fff0ec;
+
+  border: 1px solid #ffd5cc;
+}
+
+/* Second Card - Lavender */
+
+.feature-card:nth-child(2) {
+  background: #f3edff;
+
+  border: 1px solid #dfd1f5;
+}
+
+/* Third Card - Blush */
+
+.feature-card:nth-child(3) {
+  background: #fff0f3;
+
+  border: 1px solid #f4d0d8;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 15px 35px rgba(48, 36, 58, 0.09);
+}
+
+/* Feature Icons */
+
+.feature-icon {
+  width: 65px;
+
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 18px;
+
+  font-size: 32px;
+
+  background: white;
+
+  box-shadow:
+    0 8px 20px rgba(48, 36, 58, 0.08);
+}
+
+.feature-card h3 {
+  color: #30243a;
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #776878;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .features {
+    padding: 60px 20px;
+  }
+
+  .features h2 {
+    font-size: 30px;
+  }
+
+}

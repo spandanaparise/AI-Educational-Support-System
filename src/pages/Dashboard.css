@@ -1,0 +1,560 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #fff9f7;
+}
+
+.dashboard-content {
+  padding: 50px 60px;
+  text-align: center;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.dashboard-content > h1 {
+  color: #30243a;
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.dashboard-intro {
+  color: #776878;
+  font-size: 17px;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* =========================
+   STUDENT PROFILE
+========================= */
+
+.student-profile {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 28px 32px;
+
+  background: linear-gradient(
+    135deg,
+    #fff0ec,
+    #f3edff
+  );
+
+  border: 1px solid #f1d9df;
+  border-radius: 24px;
+
+  text-align: left;
+
+  box-shadow:
+    0 12px 30px rgba(48, 36, 58, 0.06);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.profile-avatar {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff8a7a;
+
+  border-radius: 20px;
+
+  font-size: 31px;
+
+  box-shadow:
+    0 8px 20px rgba(255, 138, 122, 0.25);
+}
+
+.profile-header h2 {
+  color: #30243a;
+  margin-bottom: 6px;
+  font-size: 22px;
+}
+
+.profile-header p {
+  color: #776878;
+  margin: 0;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  color: #30243a;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FEATURE GRID
+========================= */
+
+.dashboard-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.feature-dashboard-card {
+  padding: 28px 23px;
+
+  border-radius: 22px;
+
+  text-align: left;
+
+  transition: 0.3s ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Card 1 */
+
+.feature-dashboard-card:nth-child(1) {
+  background: #fff0ec;
+  border: 1px solid #ffd5cc;
+}
+
+/* Card 2 */
+
+.feature-dashboard-card:nth-child(2) {
+  background: #f3edff;
+  border: 1px solid #dfd1f5;
+}
+
+/* Card 3 */
+
+.feature-dashboard-card:nth-child(3) {
+  background: #fff0f3;
+  border: 1px solid #f4d0d8;
+}
+
+/* Card 4 */
+
+.feature-dashboard-card:nth-child(4) {
+  background: #f8efff;
+  border: 1px solid #e4d2f3;
+}
+
+/* Card 5 */
+
+.feature-dashboard-card:nth-child(5) {
+  background: #fff3ed;
+  border: 1px solid #f5d7c9;
+}
+
+/* Card 6 */
+
+.feature-dashboard-card:nth-child(6) {
+  background: #f6effa;
+  border: 1px solid #e2d4e9;
+}
+
+/* Card 7 */
+
+.feature-dashboard-card:nth-child(7) {
+  background: #fff0ec;
+  border: 1px solid #ffd5cc;
+}
+
+/* Card 8 */
+
+.feature-dashboard-card:nth-child(8) {
+  background: #f3edff;
+  border: 1px solid #dfd1f5;
+}
+
+/* Hover */
+
+.feature-dashboard-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(48, 36, 58, 0.10);
+}
+
+/* =========================
+   FEATURE ICON
+========================= */
+
+.dashboard-feature-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border-radius: 17px;
+
+  font-size: 27px;
+
+  box-shadow:
+    0 6px 15px rgba(48, 36, 58, 0.07);
+}
+
+.feature-dashboard-card h3 {
+  color: #30243a;
+
+  font-size: 19px;
+
+  margin-bottom: 12px;
+}
+
+.feature-dashboard-card p {
+  color: #776878;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   FEATURE BUTTONS
+========================= */
+
+.feature-dashboard-card a,
+.feature-dashboard-card button {
+  display: inline-block;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  background: #ff8a7a;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.feature-dashboard-card a:hover,
+.feature-dashboard-card button:hover {
+  background: #ff6f61;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   PROGRESS SECTION
+========================= */
+
+.progress-section {
+  max-width: 1100px;
+
+  margin: 70px auto 0;
+
+  text-align: center;
+}
+
+.progress-section > h2 {
+  color: #30243a;
+
+  font-size: 30px;
+
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.progress-card {
+  background: #ffffff;
+
+  padding: 27px;
+
+  border-radius: 22px;
+
+  border: 1px solid #f0dfe2;
+
+  box-shadow:
+    0 10px 25px rgba(48, 36, 58, 0.06);
+
+  text-align: left;
+}
+
+.progress-card h3 {
+  color: #30243a;
+
+  margin-bottom: 15px;
+}
+
+.progress-card p {
+  color: #776878;
+
+  margin-bottom: 12px;
+}
+
+/* Progress Bar */
+
+.progress-bar {
+  width: 100%;
+
+  height: 10px;
+
+  background: #f3e9eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #ff8a7a,
+    #c8b6e8
+  );
+
+  border-radius: 20px;
+}
+
+.progress-card span {
+  color: #5c4b65;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+/* =========================
+   LANGUAGE SUPPORT
+========================= */
+
+.language-support {
+  max-width: 700px;
+
+  margin: 60px auto 0;
+
+  padding: 32px;
+
+  background: linear-gradient(
+    135deg,
+    #f3edff,
+    #fff0f3
+  );
+
+  border: 1px solid #e1d4e8;
+
+  border-radius: 24px;
+
+  text-align: center;
+}
+
+.language-support h2 {
+  color: #30243a;
+
+  margin-bottom: 10px;
+}
+
+.language-support p {
+  color: #776878;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+.language-support select {
+  padding: 12px 20px;
+
+  border: 1px solid #e1d4e8;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #5c4b65;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+.language-support select:focus {
+  border-color: #ff8a7a;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.dashboard-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+.home-button {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  background: #fff0ec;
+
+  color: #9b5147;
+
+  border: 1px solid #ffd5cc;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.home-button:hover {
+  background: #ffc6b8;
+
+  transform: translateY(-2px);
+}
+
+.logout-button {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  background: #f3edff;
+
+  color: #715b8c;
+
+  border: 1px solid #dfd1f5;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.logout-button:hover {
+  background: #c8b6e8;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .dashboard-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dashboard-content {
+    padding: 40px 20px;
+  }
+
+  .dashboard-content > h1 {
+    font-size: 31px;
+  }
+
+  .dashboard-intro {
+    font-size: 16px;
+  }
+
+  .dashboard-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-container {
+    grid-template-columns: 1fr;
+  }
+
+  .student-profile {
+    padding: 22px;
+  }
+
+  .language-support {
+    padding: 27px 20px;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .dashboard-actions {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .home-button,
+  .logout-button {
+    width: 210px;
+
+    text-align: center;
+  }
+
+}

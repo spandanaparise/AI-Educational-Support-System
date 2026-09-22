@@ -1,0 +1,163 @@
+.ai-support-page {
+  min-height: 100vh;
+  background: #f8faff;
+}
+
+.ai-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.ai-content h1 {
+  color: #0f172a;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.ai-intro {
+  color: #64748b;
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Chat Box */
+
+.chat-box {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #e0e7ff;
+  border-radius: 18px;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.08);
+}
+
+/* Messages */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.ai-message {
+  background: #eef2ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  margin-right: 80px;
+}
+
+.ai-message strong {
+  color: #4f46e5;
+  font-size: 17px;
+}
+
+.ai-message p {
+  color: #475569;
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+
+.student-message {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: right;
+  margin-left: 80px;
+}
+
+.student-message strong {
+  color: #334155;
+  font-size: 16px;
+}
+
+.student-message p {
+  color: #475569;
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+
+/* Question Area */
+
+.question-area {
+  display: flex;
+  gap: 12px;
+}
+
+.question-area input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.question-area input:focus {
+  border-color: #6366f1;
+}
+
+.question-area button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.question-area button:hover {
+  background: #4f46e5;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .ai-content {
+    padding: 40px 20px;
+  }
+
+  .ai-content h1 {
+    font-size: 32px;
+  }
+
+  .ai-intro {
+    font-size: 16px;
+  }
+
+  .chat-box {
+    padding: 20px;
+  }
+
+  .ai-message {
+    margin-right: 20px;
+  }
+
+  .student-message {
+    margin-left: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .question-area {
+    flex-direction: column;
+  }
+
+  .question-area button {
+    width: 100%;
+  }
+
+}

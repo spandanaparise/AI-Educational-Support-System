@@ -1,0 +1,587 @@
+.classes-page {
+  min-height: 100vh;
+  background: #fff9f7;
+}
+
+.classes-content {
+  padding: 55px 60px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.classes-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.classes-label {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 30px;
+
+  background: #fff0ec;
+  color: #b85f52;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.classes-header h1 {
+  font-size: 52px;
+  color: #30243a;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.classes-header h1 span {
+  color: #ff7d70;
+}
+
+.classes-header > p {
+  color: #776878;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* =========================
+   LEARNING STATUS
+========================= */
+
+.learning-status {
+  max-width: 900px;
+  margin: 0 auto 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+
+  padding: 25px 30px;
+
+  background: linear-gradient(
+    135deg,
+    #fff0ec,
+    #f3edff
+  );
+
+  border: 1px solid #eadce4;
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 25px rgba(48, 36, 58, 0.06);
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+.status-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border-radius: 15px;
+
+  font-size: 23px;
+
+  box-shadow:
+    0 6px 15px rgba(48, 36, 58, 0.07);
+}
+
+.status-item strong {
+  display: block;
+  color: #30243a;
+  margin-bottom: 4px;
+}
+
+.status-item p {
+  color: #776878;
+  font-size: 13px;
+  margin: 0;
+}
+
+.status-divider {
+  width: 1px;
+  height: 50px;
+  background: #decfdc;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.class-section {
+  margin-bottom: 65px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.section-heading > div:first-child > span {
+  color: #9b7a87;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+  color: #30243a;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.live-badge {
+  padding: 8px 15px;
+  border-radius: 20px;
+
+  background: #fff0ec;
+  color: #d35e51;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.offline-badge {
+  padding: 8px 15px;
+  border-radius: 20px;
+
+  background: #f3edff;
+  color: #755b91;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================
+   CLASS GRID
+========================= */
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   CLASS CARD
+========================= */
+
+.class-card {
+  padding: 28px;
+
+  border-radius: 22px;
+
+  transition: 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(48, 36, 58, 0.10);
+}
+
+/* Online cards */
+
+.online-card {
+  background: #fff0ec;
+  border: 1px solid #ffd4cb;
+}
+
+/* Offline cards */
+
+.offline-card {
+  background: #f3edff;
+  border: 1px solid #ded0f0;
+}
+
+/* =========================
+   CARD TOP
+========================= */
+
+.class-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.subject-tag {
+  padding: 7px 12px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.coral-tag {
+  background: #ffc6b8;
+  color: #8f4d43;
+}
+
+.lavender-tag {
+  background: #d9caf0;
+  color: #66507f;
+}
+
+.blush-tag {
+  background: #f4b6c2;
+  color: #804c59;
+}
+
+.peach-tag {
+  background: #ffd2c8;
+  color: #8f5147;
+}
+
+.class-time {
+  color: #806f7b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.download-status {
+  color: #765e83;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.class-card h3 {
+  color: #30243a;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.class-card > p {
+  color: #776878;
+  line-height: 1.7;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+/* =========================
+   TEACHER
+========================= */
+
+.teacher {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 22px;
+}
+
+.teacher-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border-radius: 13px;
+
+  font-size: 21px;
+}
+
+.teacher strong {
+  color: #49394f;
+  font-size: 13px;
+}
+
+.teacher p {
+  color: #8a7885;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.join-button,
+.offline-button {
+  width: 100%;
+
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 11px;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.join-button {
+  background: #ff8577;
+}
+
+.join-button:hover {
+  background: #f46f61;
+}
+
+.offline-button {
+  background: #9c82c1;
+}
+
+.offline-button:hover {
+  background: #876aa9;
+}
+
+/* =========================
+   OFFLINE INFO
+========================= */
+
+.offline-info {
+  display: flex;
+  gap: 20px;
+
+  margin-bottom: 22px;
+
+  color: #776878;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================
+   SYNC SECTION
+========================= */
+
+.sync-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 28px 30px;
+
+  background: linear-gradient(
+    135deg,
+    #fff0f3,
+    #f3edff
+  );
+
+  border: 1px solid #e5d6e5;
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 25px rgba(48, 36, 58, 0.06);
+}
+
+.sync-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border-radius: 18px;
+
+  font-size: 28px;
+
+  flex-shrink: 0;
+}
+
+.sync-content {
+  flex: 1;
+}
+
+.sync-content h2 {
+  color: #30243a;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.sync-content > p {
+  color: #776878;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.sync-status {
+  color: #806d7d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sync-dot {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #ff8a7a;
+
+  margin-right: 6px;
+}
+
+.sync-button {
+  padding: 12px 22px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: #ff8a7a;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.sync-button:hover {
+  background: #f46f61;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.classes-actions {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.classes-actions a {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  background: #fff0ec;
+
+  color: #9b5147;
+
+  border: 1px solid #ffd5cc;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.classes-actions a:hover {
+  background: #ffc6b8;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+  .classes-content {
+    padding: 45px 25px;
+  }
+
+  .class-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .classes-header h1 {
+    font-size: 40px;
+  }
+
+  .learning-status {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .status-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .sync-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sync-button {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .classes-content {
+    padding: 35px 18px;
+  }
+
+  .classes-header h1 {
+    font-size: 34px;
+  }
+
+  .classes-header > p {
+    font-size: 15px;
+  }
+
+  .class-card {
+    padding: 22px;
+  }
+
+}
